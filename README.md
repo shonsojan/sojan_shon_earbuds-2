@@ -6,8 +6,6 @@ This repository hosts a promotional webpage for the **Zyn Earbuds**, showcasing 
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
 - [License](#license)
 
 ## Project Overview
@@ -26,7 +24,5 @@ The Zyn Earbuds promotional page presents three main elements of the earbuds, al
 - **JavaScript (ES6)**
 - **GSAP** for animations
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/zyn-earbuds-promotional-page.git
+### License
+This project is licensed under the MIT License.

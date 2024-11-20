@@ -1,0 +1,90 @@
+#comparison-con {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+
+  #comparison-con {
+    display: block;
+  }
+
+  #xray {
+    position: relative;
+    aspect-ratio: 16/9;
+    background-image: url(../images/earbuds-xray.png);
+    background-size: cover;
+  }
+
+  #divisor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/earbuds-colored.png);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 0px;
+    left: 37.5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 25%;
+    height: 3px;
+    border-radius: 50px;
+  }
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]::-moz-range-track {
+    height: 15px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    outline: none;
+  }
+
+  input[type="range"]::active {
+    border: none;
+    outline: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+
+  input[type="range"]:focus::-webkit-slider-thumb {
+    background: rgb(0, 0, 0);
+    border: solid 2px rgba(195, 255, 131, 0.8);
+  }
+
+  input[type="range"]:focus::-moz-range-thumb {
+    background: rgb(0, 0, 0);
+    border: solid 2px rgba(195, 255, 131, 0.8);
+  }
+}

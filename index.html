@@ -9,75 +9,151 @@
     <link type="text/css" href="css/grid.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <h1 class="hidden">ZYN EARBUDS</h1>
+      <img id="logo" src="images/earbuds_logo.png" alt="logo" />
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#Specs">Specs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="hamburger">&#9776;</button>
+      <div id="menu" class="overlay">
+        <button id="close">&times;</button>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-      <section class="full-width-grid-con">
-        <div class="col-span-full">
-          <!-- <model-viewer> HTML element -->
-          <model-viewer
-            id="model"
-            src="model/earbuds-gltf.gltf"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            camera-controls
-            tone-mapping="neutral"
-            poster="poster.webp"
-            shadow-intensity="0.8"
-            environment-image="legacy"
-            exposure="0.47"
-            shadow-softness="0.3"
+      <article>
+        <div class="grid-con" id="intro">
+          <h2 class="col-span-full">
+            Unleash Your Sound with <span> Zyn Earbuds</span>
+          </h2>
+          <p class="col-span-full">
+            Sleek design, powerful sound, and all-day comfort. Experience audio
+            like never before.
+          </p>
+        </div>
+      </article>
+      <section>
+        <!-- <model-viewer> HTML element -->
+        <model-viewer
+          id="model"
+          src="model/earbuds-gltf.gltf"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          tone-mapping="neutral"
+          poster="poster.webp"
+          shadow-intensity="0.8"
+          environment-image="legacy"
+          exposure="0.47"
+          shadow-softness="0.3"
+        >
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-position="0.9694396790698845m 1.131707820267548m -0.18792025860012396m"
+            data-normal="0.6938896298356078m -0.1811928853469155m 0.6969119886372044m"
+            data-visibility-attribute="visible"
           >
-            <button
-              class="Hotspot"
-              slot="hotspot-1"
-              data-position="0.9694396790698845m 1.131707820267548m -0.18792025860012396m"
-              data-normal="0.6938896298356078m -0.1811928853469155m 0.6969119886372044m"
-              data-visibility-attribute="visible"
-            >
-              <div class="HotspotAnnotation" id="hotspot-1"></div></button
-            ><button
-              class="Hotspot"
-              slot="hotspot-2"
-              data-position="0.22000568392041453m 0.8841583446329973m -0.2125361201625759m"
-              data-normal="-0.9765567582881413m -0.04132980193696636m 0.2112551663595671m"
-              data-visibility-attribute="visible"
-            >
-              <div class="HotspotAnnotation" id="hotspot-2"></div></button
-            ><button
-              class="Hotspot"
-              slot="hotspot-3"
-              data-position="0.3178412085593578m 0.09053006156387988m -0.21862436856280348m"
-              data-normal="-0.6283755107262841m -0.03676277905290783m -0.7770409999451696m"
-              data-visibility-attribute="visible"
-            >
-              <div class="HotspotAnnotation" id="hotspot-3"></div></button
-            ><button
-              class="Hotspot"
-              slot="hotspot-4"
-              data-position="0.4200896197081278m 0.13850177095983707m -0.25859108192397184m"
-              data-normal="0.9765567582881413m 0.04132980193696636m -0.2112551663595671m"
-              data-visibility-attribute="visible"
-            >
-              <div class="HotspotAnnotation" id="hotspot-4"></div></button
-            ><button
-              class="Hotspot"
-              slot="hotspot-5"
-              data-position="0.552956065207862m 0.7714199237841994m 0.04503190126315654m"
-              data-normal="0.39890957700727775m 0.02797760014864312m 0.9165633656555325m"
-              data-visibility-attribute="visible"
-            >
-              <div class="HotspotAnnotation" id="hotspot-5"></div>
-            </button>
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
-            <button slot="ar-button" id="ar-button">View in your space</button>
-            <div id="ar-prompt">
-              <img src="ar_hand_prompt.png" />
-            </div>
-          </model-viewer>
+            <div class="HotspotAnnotation" id="hotspot-1"></div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-2"
+            data-position="0.22000568392041453m 0.8841583446329973m -0.2125361201625759m"
+            data-normal="-0.9765567582881413m -0.04132980193696636m 0.2112551663595671m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-2"></div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-3"
+            data-position="0.3178412085593578m 0.09053006156387988m -0.21862436856280348m"
+            data-normal="-0.6283755107262841m -0.03676277905290783m -0.7770409999451696m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-3"></div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-4"
+            data-position="0.4200896197081278m 0.13850177095983707m -0.25859108192397184m"
+            data-normal="0.9765567582881413m 0.04132980193696636m -0.2112551663595671m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-4"></div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-5"
+            data-position="0.552956065207862m 0.7714199237841994m 0.04503190126315654m"
+            data-normal="0.39890957700727775m 0.02797760014864312m 0.9165633656555325m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-5"></div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <div slot="ar-button" id="ar-button"></div>
+          <div id="ar-prompt">
+            <img src="ar_hand_prompt.png" />
+          </div>
+        </model-viewer>
+      </section>
+
+      <section class="margin">
+        <div class="grid-con">
+          <section class="col-span-full">
+            <h2><span>Available Shades</span><br />Select Your Colour</h2>
+            <hr />
+            <img src="images/earbuds-green.png" id="ear-buds" />
+          </section>
+          <section
+            id="color-con"
+            class="col-span-full m-col-start-3 m-col-end-11 l-col-start-6 l-col-end-10"
+          >
+            <button id="green"></button>
+            <button id="red"></button>
+            <button id="blue"></button>
+          </section>
         </div>
       </section>
+
+      <section class="margin">
+        <section class="grid-con">
+          <div class="col-span-full">
+            <h2><span>X-ray View</span><br />See What's Inside</h2>
+            <hr />
+            <section id="mobile-tablet-view">
+              <img src="images/earbuds-xray.png" alt="x-ray view of earbuds" />
+              <img src="images/earbuds-colored.png" alt="textured view" />
+            </section>
+            <div id="comparison-con">
+              <div id="xray">
+                <div id="divisor"></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" id="slider" />
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
+    <footer>
+      <div id="media">
+        <a href="#"><img src="images/media1.svg" alt="socialmedia-icon" /></a>
+        <a href="#"><img src="images/media2.svg" alt="socialmedia-icon" /> </a>
+      </div>
+      <p>&copy;2024 All rights reserved</p>
+    </footer>
 
     <!-- Loads <model-viewer> for browsers: -->
     <script

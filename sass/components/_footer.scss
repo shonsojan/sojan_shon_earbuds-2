@@ -1,0 +1,21 @@
+@use "../abstracts" as a;
+
+footer {
+  background-color: rgb(195, 255, 131);
+  padding: 40px 0;
+  text-align: center;
+  p {
+    color: #000;
+    margin-top: 20px;
+  }
+
+  #media img {
+    width: 3%;
+    transition: filter 0.25s ease;
+    margin-right: 20px;
+  }
+
+  #media img:hover {
+    filter: brightness(0) invert(1);
+  }
+}

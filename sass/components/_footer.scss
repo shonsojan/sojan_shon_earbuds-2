@@ -1,7 +1,11 @@
 @use "../abstracts" as a;
 
 footer {
-  background-color: rgb(195, 255, 131);
+  background: linear-gradient(
+    180deg,
+    rgb(195, 255, 131) 0%,
+    rgb(37, 37, 37, 100) 150%
+  );
   padding: 40px 0;
   text-align: center;
   p {

@@ -22,7 +22,7 @@ The Zyn Earbuds promotional page presents three main elements of the earbuds, al
 - **Responsive Design:** The layout adjusts smoothly across devices, ensuring a consistent experience.
 - **Stylish Animations:** Animations powered by GSAP, with CSS and SASS styling, create an engaging visual experience.
 
-## Technologies Used
+## Technologies Used :technologist:
 
 - **HTML5**
 - **CSS3**

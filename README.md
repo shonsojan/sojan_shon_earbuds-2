@@ -5,7 +5,6 @@ This repository hosts a promotional webpage for the **Zyn Earbuds**, showcasing 
 ![Zyn Earbuds](https://cdn.dribbble.com/users/1872376/screenshots/6443709/03.jpg?resize=800x600&vertical=center)
 
 ## Table of Contents :book:
-:open_book:
 
 - [Project Overview](#project-overview)
 - [Features](#features)
@@ -13,11 +12,10 @@ This repository hosts a promotional webpage for the **Zyn Earbuds**, showcasing 
 - [License](#license)
 
 ## Project Overview :memo:
-:pencil:
 
 The Zyn Earbuds promotional page presents three main elements of the earbuds, allowing users to view feature descriptions by interacting with specific areas on the model. It also includes a comparison slider to seamlessly reveal an X-ray view, offering users a deeper understanding of the product’s internal components and design.
 
-## Features 	:gear:
+## Features :gear:
 
 - **Interactive Model:** Users can access product details by exploring different areas of the earbuds model.
 - **X-ray View with Comparison Slider:** A slider allows users to compare the external view of the earbuds with an X-ray view, showing internal components for a unique perspective.

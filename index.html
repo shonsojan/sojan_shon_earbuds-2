@@ -15,8 +15,8 @@
       <nav>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#Specs">Specs</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#specs-section">Specs</a></li>
+          <li><a href="#media">Contact</a></li>
         </ul>
       </nav>
 
@@ -25,9 +25,9 @@
         <button id="close">&times;</button>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#specs-section">Specs</a></li>
+            <li><a href="#media">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -117,16 +117,77 @@
             <hr />
             <img src="images/earbuds-green.png" id="ear-buds" />
           </section>
-          <section
-            id="color-con"
-            class="col-span-full m-col-start-3 m-col-end-11 l-col-start-6 l-col-end-10"
-          >
+          <section id="color-con" class="col-span-full">
             <button id="green"></button>
             <button id="red"></button>
             <button id="blue"></button>
           </section>
         </div>
       </section>
+
+      <section class="grid-con">
+        <div id="specs-section" class="col-span-full">
+          <h2><span>Specs</span><br />Powerful Performance</h2>
+          <hr />
+          <div class="grid-con">
+            <div
+              class="spec-item col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-4"
+            >
+              <h3>Audio</h3>
+              <ul>
+                <li>10mm dynamic drivers</li>
+                <li>20Hz – 20kHz frequency response</li>
+                <li>Enhanced bass sound profile</li>
+              </ul>
+            </div>
+            <div
+              class="spec-item col-span-full m-col-start-7 m-col-end-13 l-col-start-4 l-col-end-7"
+            >
+              <h3>Connectivity</h3>
+              <ul>
+                <li>Bluetooth 5.3</li>
+                <li>10m range</li>
+                <li>AAC and SBC support</li>
+              </ul>
+            </div>
+            <div
+              class="spec-item col-span-full m-col-end-7 l-col-start-7 l-col-end-10"
+            >
+              <h3>Battery</h3>
+              <ul>
+                <li>6 hours playtime</li>
+                <li>24 hours with charging case</li>
+                <li>Fast charge: 10 mins = 1.5 hours</li>
+              </ul>
+            </div>
+            <div
+              class="spec-item col-span-full m-col-start-7 m-col-end-13 l-col-start-10 l-col-end-13"
+            >
+              <h3>Design</h3>
+              <ul>
+                <li>Compact and ergonomic fit</li>
+                <li>Water-resistant (IPX5)</li>
+                <li>Lightweight: 4.5g each</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="col-span-full">
+        <canvas id="explode-view"></canvas>
+      </div>
+      <div class="grid-con">
+        <div class="col-span-full center">
+          <p>
+            Zyn earbuds are more than just audio devices—they're your gateway to
+            a personalized sound experience. With every<span> beat</span>, every
+            <span>note</span>, and every <span>word</span>, immerse yourself in
+            clarity that keeps you connected to what matters most. Designed to
+            fit your lifestyle, Zyn isn’t just heard—it’s felt.
+          </p>
+        </div>
+      </div>
 
       <section class="margin">
         <section class="grid-con">
@@ -149,13 +210,31 @@
           </div>
         </section>
       </section>
+      <div class="grid-con">
+        <div class="col-span-full center">
+          <p>
+            Every detail within Zyn earbuds serves a purpose. From the<span>
+              powerful</span
+            >
+            drivers to the advanced chipset, this final lookinside showcases the
+            <span>craftsmanship </span>and innovation that define Zyn. Ready to
+            deliver unparalleled sound and seamless performance, Zyn is designed
+            to keep up with you, every step of the way.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-span-full">
+        <img src="images/buds.jpg" id="buds image" />
+      </div>
     </main>
     <footer>
       <div id="media">
         <a href="#"><img src="images/media1.svg" alt="socialmedia-icon" /></a>
         <a href="#"><img src="images/media2.svg" alt="socialmedia-icon" /> </a>
       </div>
-      <p>&copy;2024 All rights reserved</p>
+      <p>Visit www.zynaudio.com</p>
+      <p><span>&copy;2024 All rights reserved</span></p>
     </footer>
 
     <!-- Loads <model-viewer> for browsers: -->
@@ -163,7 +242,9 @@
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

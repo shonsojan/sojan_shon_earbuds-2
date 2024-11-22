@@ -48,7 +48,7 @@
   canvas.width = 1920;
   canvas.height = 1080;
 
-  const frameCount = 212; //how many frame do we have
+  const frameCount = 265; //how many frame do we have
 
   const images = []; //array to hold all images
 
@@ -60,9 +60,9 @@
   // run a for loop to populate image array
   for (let i = 0; i < frameCount; i++) {
     const img = new Image();
-    img.src = `images/animation/image${(i + 1)
+    img.src = `images/animation/image0${(i + 1)
       .toString()
-      .padStart(4, "0")}.png`;
+      .padStart(4, "0")}.jpg`;
     images.push(img);
   }
 
@@ -150,7 +150,7 @@
   // console.table(images);
 
   gsap.to(buds, {
-    frame: 211,
+    frame: 264,
     snap: "frame",
     scrollTrigger: {
       trigger: "#explode-view",

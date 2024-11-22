@@ -2,6 +2,8 @@
 
 This repository hosts a promotional webpage for the **Zyn Earbuds**, showcasing the product's unique design and features. Users can explore details about the earbuds by interacting with specific areas on the model, with a **comparison slider** to reveal an X-ray view of the internal structure. The interactive page is developed using **HTML**, **CSS**, **SASS**, **JavaScript**, and **GSAP** for animations.
 
+![Zyn Earbuds](https://cdn.dribbble.com/users/1872376/screenshots/6443709/03.jpg?resize=800x600&vertical=center)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)

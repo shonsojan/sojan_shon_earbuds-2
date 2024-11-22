@@ -4,6 +4,8 @@
 
 html {
   height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,20 +29,21 @@ h2 {
 article {
   text-align: center;
   h2 {
-    font-size: 55px;
+    font-size: 50px;
     color: whitesmoke;
+    padding-bottom: 10px;
 
     span {
-      font-size: 55px;
+      font-size: 50px;
     }
   }
 
   p {
-    font-size: x-large;
+    font-size: 20px;
   }
 
   #intro {
-    padding: 13% 0;
+    padding: 10% 6%;
 
     span {
       color: rgba(195, 255, 131);
@@ -63,5 +66,47 @@ hr {
   p {
     color: rgba(225, 225, 225, 0.5);
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slide {
+    display: none;
+  }
+}
+
+#explode-view {
+  width: 130%;
+  padding-left: 15%;
+}
+
+.spec-item {
+  padding-top: 50px;
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #dedede;
+    li {
+      margin: 0.3rem 0;
+    }
+  }
+}
+
+.center {
+  text-align: center;
+
+  p {
+    font-size: larger;
+  }
+  span {
+    color: rgba(195, 255, 131);
   }
 }

@@ -40,6 +40,34 @@
     },
   ];
 
+  // ANIMATION
+
+  const canvas = document.querySelector("#explode-view");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 1920;
+  canvas.height = 1080;
+
+  const frameCount = 212; //how many frame do we have
+
+  const images = []; //array to hold all images
+
+  //create an object called buds to hold the current frame
+  const buds = {
+    frame: 0,
+  };
+
+  // run a for loop to populate image array
+  for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = `images/animation/image${(i + 1)
+      .toString()
+      .padStart(4, "0")}.png`;
+    images.push(img);
+  }
+
+  //
+
   //
   const earbuds = document.querySelector("#ear-buds");
   const buttons = document.querySelectorAll("#color-con button");
@@ -65,6 +93,13 @@
       selected.appendChild(text);
       selected.appendChild(image);
     });
+  }
+
+  function render() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    // console.log(buds.frame);
+    console.log(images[buds.frame]);
+    context.drawImage(images[buds.frame], 0, 0);
   }
 
   //call the function to load data
@@ -111,6 +146,22 @@
   menuLinks.forEach((link) => {
     link.addEventListener("click", toggleMenu);
   });
+
+  // console.table(images);
+
+  gsap.to(buds, {
+    frame: 211,
+    snap: "frame",
+    scrollTrigger: {
+      trigger: "#explode-view",
+      pin: true,
+      scrub: 1,
+      markers: false,
+      start: "top top",
+    },
+    onUpdate: render,
+  });
+  images[0].addEventListener("load", render);
 
   buttons.forEach((button) => {
     button.addEventListener("click", swapColor);

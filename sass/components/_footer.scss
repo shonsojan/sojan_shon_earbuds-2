@@ -11,10 +11,16 @@ footer {
   p {
     color: #000;
     margin-top: 20px;
+    font-size: larger;
+
+    span {
+      color: rgba(225, 225, 225, 0.578);
+      font-size: small;
+    }
   }
 
   #media img {
-    width: 3%;
+    width: 50px;
     transition: filter 0.25s ease;
     margin-right: 20px;
   }
